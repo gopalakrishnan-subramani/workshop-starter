@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="productApp">
+<head>
+ 
+  <meta charset="utf-8">
+  <title>AngularJS-Training</title>
+  <meta name="description" content="AngularJS-NodeSense">
+  <meta name="author" content="krish@nodesen.se">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="stylesheet" href="/css/picnic.min.css">
+
+<style>
+  body { margin: 60px; }
+</style>
+
+</head>
+<body>
+ 
+<div ng-init="setTitle('NG App')" >
+  <h4>{{title}}</h4>
+ 
+</div>
+ 
+<div ng-controller="HeaderController">
+  App Header - {{title}}  -- {{offer}}
+  {{$root.title}}
+ <button ng-click="generate()">Generate</button>
+  
+</div>
+
+
+  <script type="text/javascript" 
+  src="/components/angular/angular.js"></script>
+
+
+  
+  <script src="/app/js/app.controllers.js">
+  </script>
+
+  <script src="/app/js/app.js">
+  </script>
+
+  
+  <script src="/app/js/app.config.js">
+  </script>
+
+
+
+</body>
+</html>
