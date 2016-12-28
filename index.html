@@ -25,17 +25,38 @@
 </div>
  
 <div ng-controller="HeaderController">
+
+  <nav>
+      <a href="#">Home</a>
+      <a href="#/products">Products</a>
+  </nav>
+
+
   App Header - {{title}}  -- {{offer}}
   {{$root.title}}
  <button ng-click="generate()">Generate</button>
   
 </div>
 
+<!-- container -->
+
+<ui-view>
+
+</ui-view>
+
+<!--
+<div ng-controller="ProductListController">
+  <ng-include src="'/app/product/templates/product-list.html'">
+  </ng-include>
+</div>
+-->
 
   <script type="text/javascript" 
   src="/components/angular/angular.js"></script>
-
-
+  
+  <script src="/components/angular-ui-router/release/angular-ui-router.js">
+  </script>
+  
   
   <script src="/app/js/app.controllers.js">
   </script>
@@ -45,6 +66,30 @@
 
   
   <script src="/app/js/app.config.js">
+  </script>
+
+  
+  <script src="/app/product/product.config.js">
+  </script>
+
+  
+  <script src="/app/product/product.module.js">
+  </script>
+
+  
+  <script src="/app/product/product.services.js">
+  </script>
+
+  
+  <script src="/app/product/product.controllers.js">
+  </script>
+
+  
+  <script src="/app/product/product.filters.js">
+  </script>
+
+  
+  <script src="/app/product/product.directives.js">
   </script>
 
 
